@@ -28,7 +28,7 @@ export const Login = () => {
 					<Card iconType='fas' icon='address-card'>
 						<Input name='name' icon='user' iconType='fas' type='text' label='Nome e Sobrenome' />
 						<Input name='email' icon='envelope' iconType='far' type='email' label='E-mail'/>
-						<Input name='cpforcnpj' icon='person' iconType='fas' type='number' label='CPF ou CNPJ'/>
+						<Input name='cpforcnpj' icon='person' iconType='fas' type='text' label='CPF ou CNPJ' max={14}/>
 						<PasswordInput name='password' label='Senha'/>
 						<PasswordInput name='password_Confirmed' label='Confirmação de Senha'/>
 						<input type="submit" value="Cadastrar" className={styles.btn} />

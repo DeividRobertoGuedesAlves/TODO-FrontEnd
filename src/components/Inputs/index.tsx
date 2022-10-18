@@ -5,6 +5,7 @@ import inputStyles from './input.module.css';
 import passwordStyles from './password.module.css';
 
 type InputProps = {
+	max?: number;
 	icon: IconName;
 	iconType: IconPrefix;
 	name: string;
@@ -17,13 +18,13 @@ type PasswordProps = {
 	label: string;
 }
 
-export const Input = ( { name, type, label, icon, iconType}: InputProps ) => {
+export const Input = ( { name, type, label, icon, iconType, max}: InputProps ) => {
 	return (
 		<div className={inputStyles.inputGroup}>
 			<div className={inputStyles.before}>
 				<Icon icon={[iconType, icon]} fontSize={22}/>
 			</div>
-			<input type={type} name={name} id={name} placeholder=' ' className={inputStyles.input}/>
+			<input type={type} name={name} id={name} placeholder=' ' className={inputStyles.input} maxLength={max}/>
 			<span className={inputStyles.label}>{label}</span>
 		</div>
 	);
