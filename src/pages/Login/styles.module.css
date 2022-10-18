@@ -1,0 +1,37 @@
+.bg
+{
+	height: 100vh;
+	background: linear-gradient(to right, #8A00C2, magenta)
+}
+
+.center
+{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn
+{
+	width: 35%;
+	height: 30px;
+	border-radius: 25px;
+	border: 0;
+	background: white;
+	cursor: pointer;
+}
+
+.btn:hover
+{
+	background: lightgray;
+}
+
+.link
+{
+	width: 100%;
+	color: purple;
+	text-decoration: underline;
+	cursor: pointer;
+}
